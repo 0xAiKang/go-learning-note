@@ -8,13 +8,13 @@ func main()  {
 	// 切片是一个类似动态数组的数据类型
 
 	// 声明一个为 int64 类型的切片
-	var slice_empty []int64
+	var sliceEmpty []int64
 
-	fmt.Println(slice_empty)	// []
+	fmt.Println(sliceEmpty) // []
 
 	// 声明一个为 int64 类型长度为10 的数组
-	var array_empty [10]int64
-	fmt.Println(array_empty)	// [0 0 0 0 0 0 0 0 0 0]
+	var arrayEmpty [10]int64
+	fmt.Println(arrayEmpty) // [0 0 0 0 0 0 0 0 0 0]
 
 	// 初始化一个 int 64 类型的切片
 	slice := make ([]int64, 10)

@@ -15,11 +15,11 @@ func main()  {
 	fmt.Println(array)
 
 	// 声明数组时初始化
-	var array_init = [5]string{"go", "c++", "php", "js", "ruby",}
-	fmt.Println(array_init)
+	var arrayInit = [5]string{"go", "c++", "php", "js", "ruby",}
+	fmt.Println(arrayInit)
 
 	// 数组遍历
 	for i:=1; i<5; i++{
-		fmt.Printf("array_init[%d] = %s \n", i , array_init[i])
+		fmt.Printf("array_init[%d] = %s \n", i , arrayInit[i])
 	}
 }
