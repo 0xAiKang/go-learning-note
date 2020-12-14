@@ -49,6 +49,36 @@ import "fmt"
 ```
 在当前目录执行：`go run test.go` 。
 
+## Go tour
+`tour` 是Go 语言官方提供的一个在线教程，同时也支持离线版。
+
+安装原离线版：
+```
+$ go get golang.org/x/tour
+```
+如果提示连接超时，是因为命令行需要走代理。
+
+安装中文离线版：
+```
+$ go get -u github.com/Go-zh/tour
+```
+安装完成之后，会在你工作空间的 `bin` 目录中创建一个可离线执行的 tour 文件。
+
+直接执行`tour` 命令，可能会出现以下错误：
+```
+tour
+$ zsh: command not found: tour
+```
+这是因为`tour` 没有加入到`$GOPATH` 的环境变量中。
+
+使用 `go env` 查看 `$GOPATH` 所在路径（通常都是在用户目录下）。
+
+可以使用以下方式快速启动：
+```
+$ ~/go/bin/tour
+```
+使用浏览器打开`http://127.0.0.1:3999/` 即可食用。
+
 ## 常用命令
 
 |命令|作用|
