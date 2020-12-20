@@ -42,12 +42,14 @@ $ go version
 新建 `hello_world.go` 文件，添加以下内容：
 ```
 package main
+
 import "fmt"
-    func main() {
-        fmt.Println("Hello, World!")
-    }
+
+func main() {
+    fmt.Println("Hello, World!")
+}
 ```
-在当前目录执行：`go run test.go` 。
+在当前目录执行：`go run hello_world.go` 。
 
 ## Go tour
 `tour` 是Go 语言官方提供的一个在线教程，同时也支持离线版。
