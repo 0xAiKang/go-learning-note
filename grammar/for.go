@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// for 语句
 func main()  {
 	// 传统for 循环
 	for i := 1; i< 10; i++ {

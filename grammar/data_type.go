@@ -2,6 +2,18 @@ package main
 
 import "fmt"
 
+// 数据类型
+/**
+	常见的数据类型有：
+	1. 指针类型（Pointer）
+	2. 数组类型
+	3. 结构化类型(struct)
+	4. Channel 类型
+	5. 函数类型
+	6. 切片类型
+	7. 接口类型（interface）
+	8. Map 类型
+ */
 func main()  {
 	// 先声明，后赋值
 	var name string

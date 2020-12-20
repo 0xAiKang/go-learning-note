@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 // 在 go 语言中，并没有 extends，那么它是如何实现多态的呢？
-
 type Person interface {
 	sayHi()
 }

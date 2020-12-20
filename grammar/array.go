@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
+// 数组
 func main()  {
 	// 定义一个长度为 10  string  类型的数组（在go 中声明数组是需要指定长度）
+	// 类型 [n]T 表示拥有 n 个 T 类型的值的数组。
 	var array [10]string
 	fmt.Println(array)
 

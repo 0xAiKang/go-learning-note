@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
+// map 是一种无序的键值对的集合
 func main()  {
-	// map 是一种无序的键值对的集合
 	// 声明一个map
 	var dataMap map[string]string
 	// 上面这段代码没有初始化map，直接赋值会创建一个 nil map，而nil map 不能用来存放键值对

@@ -4,9 +4,8 @@ import (
 	"fmt"
 )
 
+// 切片是一个类似动态数组的数据类型
 func main()  {
-	// 切片是一个类似动态数组的数据类型
-
 	// 声明一个为 int64 类型的切片
 	var sliceEmpty []int64
 
