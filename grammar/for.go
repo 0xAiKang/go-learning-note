@@ -4,6 +4,7 @@ import "fmt"
 
 // for 语句
 func main()  {
+	// go 语言的循环，只有 for 一个关键字
 	// 传统for 循环
 	for i := 1; i< 10; i++ {
 		fmt.Println(i)
@@ -25,4 +26,12 @@ func main()  {
 	/*for  {
 		// todo
 	}*/
+
+	//
+	if i, err := someFunc(); err == nil {
+		fmt.Println("fail")
+	} else {
+		fmt.Println("success")
+	}
+
 }

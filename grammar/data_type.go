@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // 数据类型
 /**
@@ -27,4 +29,19 @@ func main()  {
 	gender := "male"
 
 	fmt.Println("我的姓名是：", name, "年龄是：", age, "性别是：", gender)
+
+	a := 1
+	// 通过取指符获得变量a 的指针
+	aPtr := &a
+	// 指针不能进行算术运算
+	// aPtr = aPtr + 1
+	fmt.Println(a, aPtr)
+	fmt.Printf("%T %T", a, aPtr)
+
+	var s string
+	fmt.Println("*" + s + "*")
+	fmt.Println(len(s))
+	if s == "" {
+		fmt.Println("s 是一个空")
+	}
 }

@@ -38,4 +38,21 @@ func main()  {
 	for k, v := range kvs {
 		fmt.Printf("%s => %s\n", k, v)
 	}
+
+	// 前面是键的类型，后面是值的类型
+	m := map[string]int{"ont": 1, "two": 2, "three": 3}
+	fmt.Printf("one: %d two: %d", m["one"], m["two"])
+
+	// 在map 中，不存在的，都是零
+	m2 := map[int]int{}
+	fmt.Println(m2)
+	m2[0] = 0
+	fmt.Println(m2[0])
+	// ok = false
+	if v, ok:=m2[3]; ok {
+		fmt.Printf("key 3's value is %d", v)
+	}else {
+		fmt.Println(ok)
+		fmt.Println("key 3 is not existing")
+	}
 }

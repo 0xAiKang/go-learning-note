@@ -6,7 +6,8 @@ import (
 
 // 切片是一个类似动态数组的数据类型
 func main()  {
-	// 声明一个为 int64 类型的切片
+	// 声明一个为 int64 类型的切片，
+	// 切片和数组的区别在于，切片在声明时，不需要指定长度，因为它是动态的
 	var sliceEmpty []int64
 
 	fmt.Println(sliceEmpty) // []
@@ -17,6 +18,9 @@ func main()  {
 
 	// 初始化一个 int 64 类型的切片
 	slice := make ([]int64, 10)
+	/**[]type, len, cap
+		其中len 个元素会被初始化为默认零值，未初始化的元素不能访问
+	 */
 	fmt.Println(slice)			// [0 0 0 0 0 0 0 0 0 0]
 
 	// 初始化一个数组
@@ -51,4 +55,21 @@ func main()  {
 			fmt.Println("index:", i)
 		}
 	}
+
+	/*
+	声明一个切片的四种方式：
+	var s0 []int
+	s1 := []int{}
+	s2 := []int{1,3,4}
+	s4 := make([]int, 3, 3)
+	 */
+	s := []int{}
+	for i:=10; i>0; i-- {
+		s = append(s, i)
+		fmt.Println(len(s), cap(s))
+	}
+
+	year := []string{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dev"}
+	Q2 := year[3:6]
+	fmt.Println(Q2, len(Q2), cap(Q2))
 }
