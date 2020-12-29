@@ -3,7 +3,7 @@ package main
 import "net/http"
 
 func handler(w http.ResponseWriter, r *http.Request)  {
-	w.Write([]byte("hello, world"))
+	w.Write([]byte(r.RequestURI))
 }
 
 func main()  {

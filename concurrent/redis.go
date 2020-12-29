@@ -25,7 +25,8 @@ func main()  {
 	}
 
 	// 使用Do 方法执行Redis 命令
-	value1, err1 := redis.Values(conn.Do("lrange", "test_list", 0 , -1 ))
+	// value1, err1 := redis.Values(conn.Do("lrange", "test_list", 0 , -1 ))
+	value1, err1 := redis.Values(conn.Do("ZRANGE", "award_info", 0, -1, "WITHSCORES"))
 	if err1 != nil {
 		fmt.Println(err1)
 	}
