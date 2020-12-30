@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 func main()  {
@@ -11,13 +12,10 @@ func main()  {
 		要产生不同的数字序列，需要给定一个不同的种子。
 		如果不定义seed值，则程序每次运行默认使用种子 1，所以得到的随机数都是一样的
 	 */
-	// 随机生成种子
-	s2 := rand.NewSource(42)
-	r2 := rand.New(s2)
-	fmt.Println(s2)
-	fmt.Println(r2)
+
+	// 通过当前unix 时间戳，生成不同的随机数数字序列
+	s := rand.NewSource(time.Now().Unix())
+	r := rand.New(s)
 	// 生成一个 [0, 100) 的随机数
-	fmt.Println(r2.Intn(100))
-	fmt.Println(r2.Int63n(100))
-	fmt.Println(int64(r2.Int()))
+	fmt.Println(r.Int63n(100))
 }
