@@ -18,7 +18,8 @@ func main()  {
 
 	// 初始化一个 int 64 类型的切片
 	slice := make ([]int64, 10)
-	/**[]type, len, cap
+	/**
+	    需向 make 传入第三个参数：[]type, len, cap
 		其中len 个元素会被初始化为默认零值，未初始化的元素不能访问
 	 */
 	fmt.Println(slice)			// [0 0 0 0 0 0 0 0 0 0]
