@@ -16,6 +16,7 @@ func Abs(v Vertex) float64 {
 }
 
 // 参数类型为 Vertex
+// 函数参数是一个指针，表示会对原始的值进行修改，相应地传参时，需要传入一个内存地址
 func Scale(v *Vertex, f float64) {
 	v.X = v.X * f
 	v.Y = v.Y * f
